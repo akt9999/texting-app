@@ -17,7 +17,7 @@ function Login(){
     async function handleSubmit(e){
         e.preventDefault();
 
-        const response = await fetch("https://texting-app-backend-git-main-arnav-a35e.vercel.app/auth/login", {
+        const response = await fetch("https://texting-app-backend-pdgwiile6-arnav-a35e.vercel.app/auth/login", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
