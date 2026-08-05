@@ -20,7 +20,7 @@ function Signup(){
     async function handleSubmit(e){
         e.preventDefault()
 
-        const response = await fetch("http://localhost:8000/auth/signup", {
+        const response = await fetch("https://texting-app-backend-git-main-arnav-a35e.vercel.app/auth/signup", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
