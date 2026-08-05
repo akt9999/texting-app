@@ -1,4 +1,4 @@
-import Auth_Form from "../components/auth_form";
+import Auth_Form from "../components/Auth_form";
 import { useState } from "react";
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
