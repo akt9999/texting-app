@@ -2,6 +2,7 @@ import Auth_Form from "../components/Auth_form";
 import { useState } from "react";
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
+import { API_URL } from "../config";
 
 function Login(){
     const navigate = useNavigate();
@@ -17,7 +18,7 @@ function Login(){
     async function handleSubmit(e){
         e.preventDefault();
 
-        const response = await fetch("https://texting-app-backend-pdgwiile6-arnav-a35e.vercel.app/auth/login", {
+        const response = await fetch(API_URL + "/auth/login", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"
